@@ -115,6 +115,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="drum.h" />
+    <ClInclude Include="guitar.h" />
+    <ClInclude Include="musicInstrum.h" />
+    <ClInclude Include="orchestra.h" />
+    <ClInclude Include="percussion.h" />
+    <ClInclude Include="saxophone.h" />
+    <ClInclude Include="stringed.h" />
+    <ClInclude Include="wind.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
