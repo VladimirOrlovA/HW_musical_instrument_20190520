@@ -1,8 +1,6 @@
 #pragma once
 #include<vector>
-#include"drum.h"
-#include"guitar.h"
-#include"saxophone.h"
+#include"musicInstrum.h"
 
 class orchestra
 {
@@ -21,16 +19,16 @@ public:
 
 	void info() const
 	{
-		cout << "\n---------------------------------\n"
-			<< "\n    Orchestra - " << name
-			<<"\n<<<<<<<<<<<<<    >>>>>>>>>>>>\n"
+		cout << "\n-----------------------------------\n"
+			<< "\n     Orchestra - " << name
+			<<"\n   <<<<<<<<<<<<   >>>>>>>>>>>>\n"
 			<<"\nComposition of music instriments: \n";
 		for (musicInstrum* mi : instrum)
 		{
-			cout << "\n Music instrument - " << string(typeid(*mi).name()).substr(6);
+			cout << "\n Music instrument:  \t" << string(typeid(*mi).name()).substr(6);
 			mi->info();
 			cout << endl;
 		}
-		cout << "\n---------------------------------\n";
+		cout << "\n-----------------------------------\n";
 	}
 };

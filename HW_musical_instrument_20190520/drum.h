@@ -7,8 +7,7 @@ class drum : public percussion
 	int diameter;
 public:
 	drum(string material_1, string material_2, string type, string kind, int diameter)
-		:percussion(material_1, material_2, type)
-	{
+		:percussion(material_1, material_2)	{
 		this->kind = kind;
 		this->diameter = diameter;
 	}
@@ -18,10 +17,9 @@ public:
 	string getKind() const { return this->kind; }
 	int getDiameter() const { return this->diameter; }
 
-	void info() const override
-	{
-		cout << "\n Kind:\t" << kind
-			<< "\n Diameter:\t" << diameter;
+	void info() const override	{
+		cout << "\n Kind:            \t" << kind
+			<< "\n Diameter:            \t" << diameter;
 		percussion::info();
 	}
 };

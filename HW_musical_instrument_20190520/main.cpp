@@ -1,6 +1,6 @@
 #include"drum.h"
-#include"stringed.h"
-#include"wind.h"
+#include"guitar.h"
+#include"saxophone.h"
 #include"orchestra.h"
 
 void main()

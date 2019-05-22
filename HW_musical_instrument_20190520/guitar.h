@@ -7,8 +7,7 @@ class guitar : public stringed
 	int cntStrings;
 public:
 	guitar(string material_1, string material_2, string type, string kind, int cntStrings)
-		:stringed(material_1, material_2, type)
-	{
+		:stringed(material_1, material_2){
 		this->kind = kind;
 		this->cntStrings = cntStrings;
 	}
@@ -21,8 +20,8 @@ public:
 	void info() const override
 	{
 		
-		cout << "\n Kind:\t" << kind
-			<< "\n Number of strings:\t" << cntStrings;
+		cout << "\n Kind:            \t" << kind
+			<< "\n Number of strings:   \t" << cntStrings;
 		stringed::info();
 	}
 };
